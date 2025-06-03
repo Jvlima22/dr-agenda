@@ -21,13 +21,9 @@ const AuthenticationPage = async () => {
           <TabsTrigger value="login">Login</TabsTrigger>
           <TabsTrigger value="register">Criar conta</TabsTrigger>
         </TabsList>
-
-        {/* Login */}
         <TabsContent value="login">
           <LoginForm />
         </TabsContent>
-
-        {/* Register */}
         <TabsContent value="register">
           <SignUpForm />
         </TabsContent>

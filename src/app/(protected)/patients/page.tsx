@@ -3,7 +3,6 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
 import { DataTable } from "@/components/ui/data-table";
-
 import {
   PageActions,
   PageContainer,
@@ -29,6 +28,9 @@ const PatientsPage = async () => {
   }
   if (!session.user.clinic) {
     redirect("/clinic-form");
+  }
+  if (!session.user.plan) {
+    redirect("/new-subscription");
   }
   const patients = await db.query.patientsTable.findMany({
     where: eq(patientsTable.clinicId, session.user.clinic.id),
