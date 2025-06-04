@@ -42,7 +42,7 @@ function Scene3D() {
 
       {/* Representação do Dashboard */}
       <Float speed={1.2} rotationIntensity={0.3} floatIntensity={0.8}>
-        <mesh position={[-3, 0, 0]} rotation={[0.2, 0.3, 0]}>
+        <mesh position={[-5, 0, -2]} rotation={[0.2, 0.3, 0]}>
           <boxGeometry args={[2, 1.5, 0.1]} />
           <meshStandardMaterial
             color="#3b82f6"
@@ -54,7 +54,7 @@ function Scene3D() {
 
       {/* Calendário de Agendamentos */}
       <Float speed={1.6} rotationIntensity={0.4} floatIntensity={1}>
-        <group position={[3, 0, 0]}>
+        <group position={[5, 0, -2]}>
           <mesh>
             <boxGeometry args={[1.5, 1.8, 0.1]} />
             <meshStandardMaterial
@@ -102,7 +102,7 @@ function Scene3D() {
 
       {/* Dodecaedro flutuante - azul índigo */}
       <Float speed={1.7} rotationIntensity={0.8} floatIntensity={1.5}>
-        <mesh position={[-4, 3, -3]}>
+        <mesh position={[-6, 4, -4]}>
           <dodecahedronGeometry args={[0.7]} />
           <meshStandardMaterial
             color="#4f46e5"
@@ -114,7 +114,7 @@ function Scene3D() {
 
       {/* Anel torcido - azul safira */}
       <Float speed={1.4} rotationIntensity={0.9} floatIntensity={1.3}>
-        <mesh position={[5, 1, -4]}>
+        <mesh position={[7, 3, -5]}>
           <torusKnotGeometry args={[0.5, 0.2, 128, 16]} />
           <meshStandardMaterial
             color="#2563eb"
@@ -126,7 +126,7 @@ function Scene3D() {
 
       {/* Cilindro inclinado - azul celeste */}
       <Float speed={2.1} rotationIntensity={0.6} floatIntensity={1.7}>
-        <mesh position={[0, -4, 2]} rotation={[0.5, 0.3, 0.2]}>
+        <mesh position={[0, -5, 3]} rotation={[0.5, 0.3, 0.2]}>
           <cylinderGeometry args={[0.3, 0.3, 1.5, 32]} />
           <meshStandardMaterial
             color="#38bdf8"
@@ -138,7 +138,7 @@ function Scene3D() {
 
       {/* Esfera secundária - azul médio */}
       <Float speed={1.5} rotationIntensity={0.5} floatIntensity={1}>
-        <mesh position={[-3, -2, 0]}>
+        <mesh position={[-5, -3, 2]}>
           <sphereGeometry args={[1, 32, 32]} />
           <meshStandardMaterial
             color="#3b82f6"
@@ -150,7 +150,7 @@ function Scene3D() {
 
       {/* Esfera terciária - azul claro */}
       <Float speed={1.2} rotationIntensity={0.3} floatIntensity={0.8}>
-        <mesh position={[3, 2, -2]}>
+        <mesh position={[5, 4, -3]}>
           <sphereGeometry args={[0.8, 32, 32]} />
           <meshStandardMaterial
             color="#0ea5e9"
@@ -162,7 +162,7 @@ function Scene3D() {
 
       {/* Elementos decorativos menores - azul cyan */}
       <Float speed={1.8} rotationIntensity={0.4} floatIntensity={1.2}>
-        <mesh position={[2, -1, 1]}>
+        <mesh position={[4, -3, 2]}>
           <octahedronGeometry args={[0.5]} />
           <meshStandardMaterial
             color="#06b6d4"
@@ -173,7 +173,7 @@ function Scene3D() {
       </Float>
 
       <Float speed={1.3} rotationIntensity={0.6} floatIntensity={0.9}>
-        <mesh position={[-2, 1, -1]}>
+        <mesh position={[-4, 2, -2]}>
           <tetrahedronGeometry args={[0.6]} />
           <meshStandardMaterial
             color="#0284c7"
@@ -184,7 +184,7 @@ function Scene3D() {
       </Float>
       {/* Elemento decorativo - torus azul */}
       <Float speed={1.6} rotationIntensity={0.7} floatIntensity={1.1}>
-        <mesh position={[4, -2, -1]}>
+        <mesh position={[6, -4, -2]}>
           <torusGeometry args={[0.6, 0.2, 16, 32]} />
           <meshStandardMaterial
             color="#38bdf8"
@@ -196,7 +196,7 @@ function Scene3D() {
 
       {/* Elemento decorativo - cone azul escuro */}
       <Float speed={1.4} rotationIntensity={0.5} floatIntensity={1}>
-        <mesh position={[-4, 3, -2]} rotation={[0, 0, Math.PI / 4]}>
+        <mesh position={[-6, 4, -3]} rotation={[0, 0, Math.PI / 4]}>
           <coneGeometry args={[0.4, 0.8, 32]} />
           <meshStandardMaterial
             color="#1e40af"
@@ -208,7 +208,7 @@ function Scene3D() {
 
       {/* Elemento decorativo - dodecaedro ciano */}
       <Float speed={1.7} rotationIntensity={0.8} floatIntensity={1.3}>
-        <mesh position={[1, 3, 2]}>
+        <mesh position={[3, 5, 3]}>
           <dodecahedronGeometry args={[0.4]} />
           <meshStandardMaterial
             color="#22d3ee"
@@ -220,7 +220,7 @@ function Scene3D() {
 
       {/* Elemento decorativo - torusKnot azul claro */}
       <Float speed={1.9} rotationIntensity={0.6} floatIntensity={1.2}>
-        <mesh position={[-3, -3, 1]}>
+        <mesh position={[-5, -4, 2]}>
           <torusKnotGeometry args={[0.3, 0.1, 64, 16]} />
           <meshStandardMaterial
             color="#7dd3fc"
@@ -232,7 +232,7 @@ function Scene3D() {
 
       {/* Torus - azul celeste */}
       <Float speed={1.6} rotationIntensity={0.7} floatIntensity={1.1}>
-        <mesh position={[4, -2, 2]}>
+        <mesh position={[6, -3, 3]}>
           <torusGeometry args={[0.8, 0.2, 16, 32]} />
           <meshStandardMaterial
             color="#38bdf8"
@@ -244,7 +244,7 @@ function Scene3D() {
 
       {/* Cone - azul royal */}
       <Float speed={1.4} rotationIntensity={0.8} floatIntensity={1.3}>
-        <mesh position={[-4, 3, -1]} rotation={[0, 0, Math.PI / 4]}>
+        <mesh position={[-6, 5, -2]} rotation={[0, 0, Math.PI / 4]}>
           <coneGeometry args={[0.6, 1.2, 32]} />
           <meshStandardMaterial
             color="#2563eb"
@@ -256,7 +256,7 @@ function Scene3D() {
 
       {/* Dodecahedron - azul safira */}
       <Float speed={2.1} rotationIntensity={0.9} floatIntensity={1.4}>
-        <mesh position={[0, 3, 2]}>
+        <mesh position={[0, 5, 3]}>
           <dodecahedronGeometry args={[0.7]} />
           <meshStandardMaterial
             color="#1d4ed8"
@@ -268,7 +268,7 @@ function Scene3D() {
 
       {/* Torus Knot - azul turquesa */}
       <Float speed={1.7} rotationIntensity={1.2} floatIntensity={1.5}>
-        <mesh position={[-3, 0, 3]}>
+        <mesh position={[-5, 0, 4]}>
           <torusKnotGeometry args={[0.5, 0.15, 100, 16]} />
           <meshStandardMaterial
             color="#0891b2"
@@ -276,6 +276,118 @@ function Scene3D() {
             roughness={0.1}
           />
         </mesh>
+      </Float>
+
+      {/* Icosaedro - azul celeste */}
+      <Float speed={1.8} rotationIntensity={0.7} floatIntensity={1.6}>
+        <mesh position={[8, 2, -6]}>
+          <icosahedronGeometry args={[0.6]} />
+          <meshStandardMaterial
+            color="#38bdf8"
+            metalness={0.7}
+            roughness={0.3}
+          />
+        </mesh>
+      </Float>
+
+      {/* Octaedro - azul royal */}
+      <Float speed={2.2} rotationIntensity={0.8} floatIntensity={1.4}>
+        <mesh position={[-8, 3, -5]}>
+          <octahedronGeometry args={[0.7]} />
+          <meshStandardMaterial
+            color="#2563eb"
+            metalness={0.6}
+            roughness={0.4}
+          />
+        </mesh>
+      </Float>
+
+      {/* Anel Duplo - azul índigo */}
+      <Float speed={1.5} rotationIntensity={1.1} floatIntensity={1.3}>
+        <group position={[7, -5, 4]}>
+          <mesh>
+            <torusGeometry args={[0.8, 0.2, 32, 32]} />
+            <meshStandardMaterial
+              color="#4f46e5"
+              metalness={0.8}
+              roughness={0.2}
+            />
+          </mesh>
+          <mesh rotation={[Math.PI / 2, 0, 0]}>
+            <torusGeometry args={[0.8, 0.2, 32, 32]} />
+            <meshStandardMaterial
+              color="#4f46e5"
+              metalness={0.8}
+              roughness={0.2}
+            />
+          </mesh>
+        </group>
+      </Float>
+
+      {/* Cubo Rotacionado - azul claro */}
+      <Float speed={1.9} rotationIntensity={0.9} floatIntensity={1.7}>
+        <mesh position={[-7, -4, 5]} rotation={[Math.PI / 4, Math.PI / 4, 0]}>
+          <boxGeometry args={[0.8, 0.8, 0.8]} />
+          <meshStandardMaterial
+            color="#7dd3fc"
+            metalness={0.5}
+            roughness={0.3}
+          />
+        </mesh>
+      </Float>
+
+      {/* Espiral - azul safira */}
+      <Float speed={2.0} rotationIntensity={1.0} floatIntensity={1.2}>
+        <mesh position={[6, 5, -4]}>
+          <torusKnotGeometry args={[0.6, 0.2, 128, 32, 2, 3]} />
+          <meshStandardMaterial
+            color="#1d4ed8"
+            metalness={0.7}
+            roughness={0.2}
+          />
+        </mesh>
+      </Float>
+
+      {/* Pirâmide - azul ciano */}
+      <Float speed={1.6} rotationIntensity={0.6} floatIntensity={1.5}>
+        <mesh position={[-4, 6, 3]} rotation={[0, Math.PI / 4, 0]}>
+          <coneGeometry args={[0.5, 1, 4]} />
+          <meshStandardMaterial
+            color="#06b6d4"
+            metalness={0.6}
+            roughness={0.3}
+          />
+        </mesh>
+      </Float>
+
+      {/* Esfera com anéis - azul turquesa */}
+      <Float speed={1.7} rotationIntensity={0.8} floatIntensity={1.4}>
+        <group position={[8, -3, -3]}>
+          <mesh>
+            <sphereGeometry args={[0.4, 32, 32]} />
+            <meshStandardMaterial
+              color="#0891b2"
+              metalness={0.8}
+              roughness={0.2}
+            />
+          </mesh>
+          <mesh rotation={[Math.PI / 2, 0, 0]}>
+            <torusGeometry args={[0.6, 0.1, 16, 32]} />
+            <meshStandardMaterial
+              color="#0891b2"
+              metalness={0.8}
+              roughness={0.2}
+            />
+          </mesh>
+          <mesh rotation={[0, Math.PI / 2, 0]}>
+            <torusGeometry args={[0.6, 0.1, 16, 32]} />
+            <meshStandardMaterial
+              color="#0891b2"
+              metalness={0.8}
+              roughness={0.2}
+            />
+          </mesh>
+        </group>
       </Float>
 
       <OrbitControls
