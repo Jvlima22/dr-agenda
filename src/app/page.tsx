@@ -294,7 +294,7 @@ export default function Home() {
 
   const handleStart = () => {
     setShowSplash(false);
-    router.push("/subscription");
+    router.push("/authentication");
   };
 
   if (showSplash) {
