@@ -16,14 +16,122 @@ function Scene3D() {
       <pointLight position={[10, 10, 10]} intensity={1} color="#0ea5e9" />
       <pointLight position={[-10, -10, -10]} intensity={0.8} color="#3b82f6" />
 
-      {/* Logo animado principal - azul escuro */}
-      <Float speed={2} rotationIntensity={1} floatIntensity={2}>
-        <mesh>
-          <boxGeometry args={[2, 2, 2]} />
+      {/* Símbolo do hospital (Cruz) */}
+      <Float speed={1.4} rotationIntensity={0.5} floatIntensity={1.2}>
+        <group position={[0, 2, 0]}>
+          {/* Cruz vertical */}
+          <mesh>
+            <boxGeometry args={[0.4, 1.5, 0.4]} />
+            <meshStandardMaterial
+              color="#38bdf8"
+              metalness={0.6}
+              roughness={0.2}
+            />
+          </mesh>
+          {/* Cruz horizontal */}
+          <mesh>
+            <boxGeometry args={[1.5, 0.4, 0.4]} />
+            <meshStandardMaterial
+              color="#38bdf8"
+              metalness={0.6}
+              roughness={0.2}
+            />
+          </mesh>
+        </group>
+      </Float>
+
+      {/* Representação do Dashboard */}
+      <Float speed={1.2} rotationIntensity={0.3} floatIntensity={0.8}>
+        <mesh position={[-3, 0, 0]} rotation={[0.2, 0.3, 0]}>
+          <boxGeometry args={[2, 1.5, 0.1]} />
           <meshStandardMaterial
-            color="#1e40af"
-            metalness={0.8}
+            color="#3b82f6"
+            metalness={0.7}
+            roughness={0.3}
+          />
+        </mesh>
+      </Float>
+
+      {/* Calendário de Agendamentos */}
+      <Float speed={1.6} rotationIntensity={0.4} floatIntensity={1}>
+        <group position={[3, 0, 0]}>
+          <mesh>
+            <boxGeometry args={[1.5, 1.8, 0.1]} />
+            <meshStandardMaterial
+              color="#0ea5e9"
+              metalness={0.5}
+              roughness={0.4}
+            />
+          </mesh>
+          {/* Linhas do calendário */}
+          {[-0.4, 0, 0.4].map((y, i) => (
+            <mesh key={i} position={[0, y, 0.06]}>
+              <boxGeometry args={[1.3, 0.1, 0.01]} />
+              <meshStandardMaterial color="#60a5fa" />
+            </mesh>
+          ))}
+        </group>
+      </Float>
+
+      {/* Prédio da Clínica */}
+      <Float speed={1.3} rotationIntensity={0.2} floatIntensity={0.7}>
+        <group position={[0, -2, 0]}>
+          <mesh>
+            <boxGeometry args={[2, 2.5, 0.5]} />
+            <meshStandardMaterial
+              color="#2563eb"
+              metalness={0.6}
+              roughness={0.3}
+            />
+          </mesh>
+          {/* Janelas */}
+          {[-0.5, 0.5].map((x, i) =>
+            [-0.5, 0.5].map((y, j) => (
+              <mesh key={`${i}-${j}`} position={[x, y, 0.26]}>
+                <boxGeometry args={[0.4, 0.4, 0.01]} />
+                <meshStandardMaterial
+                  color="#93c5fd"
+                  metalness={0.8}
+                  roughness={0.2}
+                />
+              </mesh>
+            ))
+          )}
+        </group>
+      </Float>
+
+      {/* Dodecaedro flutuante - azul índigo */}
+      <Float speed={1.7} rotationIntensity={0.8} floatIntensity={1.5}>
+        <mesh position={[-4, 3, -3]}>
+          <dodecahedronGeometry args={[0.7]} />
+          <meshStandardMaterial
+            color="#4f46e5"
+            metalness={0.7}
             roughness={0.2}
+          />
+        </mesh>
+      </Float>
+
+      {/* Anel torcido - azul safira */}
+      <Float speed={1.4} rotationIntensity={0.9} floatIntensity={1.3}>
+        <mesh position={[5, 1, -4]}>
+          <torusKnotGeometry args={[0.5, 0.2, 128, 16]} />
+          <meshStandardMaterial
+            color="#2563eb"
+            metalness={0.8}
+            roughness={0.3}
+          />
+        </mesh>
+      </Float>
+
+      {/* Cilindro inclinado - azul celeste */}
+      <Float speed={2.1} rotationIntensity={0.6} floatIntensity={1.7}>
+        <mesh position={[0, -4, 2]} rotation={[0.5, 0.3, 0.2]}>
+          <cylinderGeometry args={[0.3, 0.3, 1.5, 32]} />
+          <meshStandardMaterial
+            color="#38bdf8"
+            metalness={0.6}
+            roughness={0.4}
           />
         </mesh>
       </Float>
@@ -74,6 +182,101 @@ function Scene3D() {
           />
         </mesh>
       </Float>
+      {/* Elemento decorativo - torus azul */}
+      <Float speed={1.6} rotationIntensity={0.7} floatIntensity={1.1}>
+        <mesh position={[4, -2, -1]}>
+          <torusGeometry args={[0.6, 0.2, 16, 32]} />
+          <meshStandardMaterial
+            color="#38bdf8"
+            metalness={0.8}
+            roughness={0.2}
+          />
+        </mesh>
+      </Float>
+
+      {/* Elemento decorativo - cone azul escuro */}
+      <Float speed={1.4} rotationIntensity={0.5} floatIntensity={1}>
+        <mesh position={[-4, 3, -2]} rotation={[0, 0, Math.PI / 4]}>
+          <coneGeometry args={[0.4, 0.8, 32]} />
+          <meshStandardMaterial
+            color="#1e40af"
+            metalness={0.6}
+            roughness={0.3}
+          />
+        </mesh>
+      </Float>
+
+      {/* Elemento decorativo - dodecaedro ciano */}
+      <Float speed={1.7} rotationIntensity={0.8} floatIntensity={1.3}>
+        <mesh position={[1, 3, 2]}>
+          <dodecahedronGeometry args={[0.4]} />
+          <meshStandardMaterial
+            color="#22d3ee"
+            metalness={0.7}
+            roughness={0.2}
+          />
+        </mesh>
+      </Float>
+
+      {/* Elemento decorativo - torusKnot azul claro */}
+      <Float speed={1.9} rotationIntensity={0.6} floatIntensity={1.2}>
+        <mesh position={[-3, -3, 1]}>
+          <torusKnotGeometry args={[0.3, 0.1, 64, 16]} />
+          <meshStandardMaterial
+            color="#7dd3fc"
+            metalness={0.5}
+            roughness={0.4}
+          />
+        </mesh>
+      </Float>
+
+      {/* Torus - azul celeste */}
+      <Float speed={1.6} rotationIntensity={0.7} floatIntensity={1.1}>
+        <mesh position={[4, -2, 2]}>
+          <torusGeometry args={[0.8, 0.2, 16, 32]} />
+          <meshStandardMaterial
+            color="#38bdf8"
+            metalness={0.7}
+            roughness={0.2}
+          />
+        </mesh>
+      </Float>
+
+      {/* Cone - azul royal */}
+      <Float speed={1.4} rotationIntensity={0.8} floatIntensity={1.3}>
+        <mesh position={[-4, 3, -1]} rotation={[0, 0, Math.PI / 4]}>
+          <coneGeometry args={[0.6, 1.2, 32]} />
+          <meshStandardMaterial
+            color="#2563eb"
+            metalness={0.6}
+            roughness={0.3}
+          />
+        </mesh>
+      </Float>
+
+      {/* Dodecahedron - azul safira */}
+      <Float speed={2.1} rotationIntensity={0.9} floatIntensity={1.4}>
+        <mesh position={[0, 3, 2]}>
+          <dodecahedronGeometry args={[0.7]} />
+          <meshStandardMaterial
+            color="#1d4ed8"
+            metalness={0.8}
+            roughness={0.2}
+          />
+        </mesh>
+      </Float>
+
+      {/* Torus Knot - azul turquesa */}
+      <Float speed={1.7} rotationIntensity={1.2} floatIntensity={1.5}>
+        <mesh position={[-3, 0, 3]}>
+          <torusKnotGeometry args={[0.5, 0.15, 100, 16]} />
+          <meshStandardMaterial
+            color="#0891b2"
+            metalness={0.9}
+            roughness={0.1}
+          />
+        </mesh>
+      </Float>
 
       <OrbitControls
         enableZoom={false}
@@ -119,10 +322,10 @@ export default function Home() {
 
           <div className="mb-8">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
-              Sistema de Gestão Médica
+              Sistema de gestão médica
             </h1>
             <p className="text-lg md:text-xl text-blue-100 mb-8 drop-shadow-md">
-              Sua Solução Completa de Gestão Clínica
+              Sua solução completa de gestão clínica
             </p>
           </div>
 
