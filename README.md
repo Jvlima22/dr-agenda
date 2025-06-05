@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DR-AGENDA
+
+*Empower your healthcare journey with seamless scheduling.*
+
+![last commit](https://img.shields.io/badge/last%20commit-yesterday-blue?style=flat-square&logo=github)
+![typescript](https://img.shields.io/badge/typescript-97.9%25-blue?style=flat-square&logo=typescript)
+![languages](https://img.shields.io/badge/languages-3-informational?style=flat-square)
+
+---
+
+## Built with the tools and technologies:
+
+![JSON](https://img.shields.io/badge/-JSON-black?style=flat-square&logo=json)
+![Markdown](https://img.shields.io/badge/-Markdown-black?style=flat-square&logo=markdown)
+![NPM](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm)
+![Prettier](https://img.shields.io/badge/-Prettier-F7B93E?style=flat-square&logo=prettier)
+![.ENV](https://img.shields.io/badge/-.ENV-yellow?style=flat-square)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript)
+![Zod](https://img.shields.io/badge/-Zod-3178C6?style=flat-square)
+![Stripe](https://img.shields.io/badge/-Stripe-635BFF?style=flat-square&logo=stripe)
+![ESLint](https://img.shields.io/badge/-ESLint-4B32C3?style=flat-square&logo=eslint)
+![date-fns](https://img.shields.io/badge/-datefns-C44569?style=flat-square)
+![React Hook Form](https://img.shields.io/badge/-React%20Hook%20Form-EC5990?style=flat-square)
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Testing](#testing)
+
+---
+
+## Overview
+
+**dr-agenda** is a powerful developer tool designed to streamline the process of building Next.js applications, enabling rapid development and deployment with minimal setup.
+
+### Why dr-agenda?
+
+This project simplifies the development workflow for Next.js applications, addressing common pain points faced by developers. The core features include:
+
+- 🏗 **Foundational Setup**: Quickly kickstart your Next.js projects with a robust configuration.
+- 🔁 **Auto-Updating Pages**: Experience real-time updates during local development, eliminating manual refreshes.
+- 🔡 **Font Optimization**: Enhance performance with optimized fonts for faster load times.
+- 🎨 **Tailwind CSS Integration**: Utilize utility-first CSS for consistent and responsive design.
+- 📘 **Learning Resources**: Access comprehensive guides for deploying on Vercel and mastering Next.js.
+- 🔒 **TypeScript Support**: Benefit from type safety and improved code quality, reducing runtime errors.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+This project requires the following dependencies:
+
+- **Programming Language**: TypeScript  
+- **Package Manager**: Npm
+
+### Installation
+
+Build dr-agenda from the source and install dependencies:
+
+1. **Clone the repository:**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/Jvlima22/dr-agenda
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Navigate to the project directory:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+cd dr-agenda
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Install the dependencies:**
 
-## Learn More
+Using npm:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Usage**
+Run the project with:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Using npm:
 
-## Deploy on Vercel
+```bash
+npm start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Testing**
+Dr-agenda uses the {test_framework} test framework. Run the test suite with:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Using npm:
+
+```bash
+npm test
