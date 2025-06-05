@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-# Dr. Agenda 🏥
-=======
+
+
 # DR-AGENDA
 
 *Empower your healthcare journey with seamless scheduling.*
