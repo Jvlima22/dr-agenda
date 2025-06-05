@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# Dr. Agenda 🏥
+=======
 # DR-AGENDA
 
 *Empower your healthcare journey with seamless scheduling.*
@@ -53,9 +56,103 @@ This project simplifies the development workflow for Next.js applications, addre
 - 🔒 **TypeScript Support**: Benefit from type safety and improved code quality, reducing runtime errors.
 
 ---
+>>>>>>> 07b9c395490ceb5c999181365f64a556f6d2e281
 
-## Getting Started
+Dr. Agenda é uma aplicação web moderna para gerenciamento de agendamentos médicos, desenvolvida com as mais recentes tecnologias web.
 
+<<<<<<< HEAD
+## 🚀 Tecnologias Utilizadas
+
+- [Next.js 15](https://nextjs.org/) - Framework React para produção
+- [React 19](https://reactjs.org/) - Biblioteca JavaScript para interfaces de usuário
+- [TypeScript](https://www.typescriptlang.org/) - Superset JavaScript com tipagem estática
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário
+- [Drizzle ORM](https://orm.drizzle.team/) - ORM TypeScript moderno
+- [PostgreSQL](https://www.postgresql.org/) - Banco de dados relacional
+- [Stripe](https://stripe.com/) - Processamento de pagamentos
+- [React Query](https://tanstack.com/query/latest) - Gerenciamento de estado e cache
+- [React Hook Form](https://react-hook-form.com/) - Gerenciamento de formulários
+- [Zod](https://zod.dev/) - Validação de esquemas TypeScript
+- [Radix UI](https://www.radix-ui.com/) - Componentes UI primitivos e acessíveis
+
+## ✨ Funcionalidades
+
+- 🔐 Autenticação segura de usuários
+- 📅 Agendamento de consultas
+- 💳 Processamento de pagamentos
+- 📊 Dashboard administrativo
+- 📱 Design responsivo
+- 🌙 Tema claro/escuro
+- 🔍 Busca e filtros avançados
+- 📈 Relatórios e análises
+
+## 🛠️ Pré-requisitos
+
+- Node.js 18+
+- PostgreSQL
+- Conta Stripe (para processamento de pagamentos)
+
+## 🚀 Como executar
+
+1. Clone o repositório:
+   \`\`\`bash
+   git clone https://github.com/seu-usuario/dr-agenda.git
+   cd dr-agenda
+   \`\`\`
+
+2. Instale as dependências:
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. Configure as variáveis de ambiente:
+   Crie um arquivo \`.env\` na raiz do projeto e adicione:
+   \`\`\`env
+   DATABASE_URL="postgresql://seu-usuario:sua-senha@localhost:5432/dr-agenda"
+   STRIPE_SECRET_KEY="sua-chave-secreta-do-stripe"
+   STRIPE_PUBLIC_KEY="sua-chave-publica-do-stripe"
+   NEXTAUTH_SECRET="seu-secret-para-autenticacao"
+   \`\`\`
+
+4. Execute as migrações do banco de dados:
+   \`\`\`bash
+   npm run db:migrate
+   \`\`\`
+
+5. Inicie o servidor de desenvolvimento:
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+
+A aplicação estará disponível em [http://localhost:3000](http://localhost:3000)
+
+## 📦 Scripts Disponíveis
+
+- \`npm run dev\`: Inicia o servidor de desenvolvimento
+- \`npm run build\`: Cria a build de produção
+- \`npm run start\`: Inicia o servidor de produção
+- \`npm run lint\`: Executa o linter
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Por favor, leia o [guia de contribuição](CONTRIBUTING.md) primeiro.
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👥 Autores
+
+- Josué Lima - [@Jvlima22](https://github.com/Jvlima22)
+
+## 💬 Suporte
+
+Para suporte, envie um email para josulima90@gmail.com ou abra uma issue no repositório.
+
+---
+
+Feito com ❤️ e ☕
+=======
 ### Prerequisites
 
 This project requires the following dependencies:
@@ -98,3 +195,4 @@ Using npm:
 
 ```bash
 npm test
+>>>>>>> 07b9c395490ceb5c999181365f64a556f6d2e281
